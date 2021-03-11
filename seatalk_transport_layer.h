@@ -1,7 +1,7 @@
 // Bus communication functions
 
-int seatalk_initialize_transport_layer();
-void seatalk_exit_transport_layer();
+int seatalk_initialize_transport_layer(void);
+void seatalk_exit_transport_layer(void);
 
 // Implementation Instructions:
 //   * a byte is received as s series of 8 bits followed by 1 command bit.

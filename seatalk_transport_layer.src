@@ -50,6 +50,7 @@ int seatalk_initialize_transport_layer() {
   }
   seatalk_init_hardware_signal();
   seatalk_init_hardware_irq();
+  return 0;
 }
 
 void seatalk_exit_transport_layer() {
