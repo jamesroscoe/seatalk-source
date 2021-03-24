@@ -268,7 +268,7 @@ int seatalk_queue_datagram(int seatalk_port, int datagram_length, char *datagram
 
   state = &seatalk_transport_state[seatalk_port];
 
-  if (!seatalk_can_transmit(seatalk_port)) {
+  if (seatalk_can_transmit(seatalk_port)) {
     return 0;
   }
 

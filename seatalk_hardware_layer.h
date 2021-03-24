@@ -1,6 +1,8 @@
+// include application-specific settings. Find copy the example from ../seatalk/seatalk_settings.h.example and make changes as necessary.
+#include "../seatalk_settings.h"
+
 // signal and irq initialization are separate in order to accommodate
 // level and bit timing testing during development of hardware interfaces
-#define SEATALK_PORTS 2
 
 int seatalk_init_hardware_signal(void);
 int seatalk_init_hardware_irq(void);
